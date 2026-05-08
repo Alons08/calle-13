@@ -1,636 +1,466 @@
 // Array completo de productos
 const products = [
-    // A LA BRASA
+    // CEVICHES
     {
         id: 1,
-        name: "Pollo entero",
-        category: "a-la-brasa",
-        price: 58.00,
-        description: "Papas clásicas + ensalada + cremas",
-        image: "./images/menu/pollo-entero.jpg",
-        available: true
+        name: "Ceviche mixto",
+        category: "ceviches",
+        price: 15.00,
+        description: "Ceviche mixto tradicional."
     },
     {
         id: 2,
-        name: "1/2 Pollo",
-        category: "a-la-brasa",
-        price: 32.00,
-        description: "Papas clásicas + ensalada + cremas",
-        image: "./images/menu/medio-pollo.jpg",
-        available: true
+        name: "Ceviche de pescado",
+        category: "ceviches",
+        price: 20.00,
+        description: "Ceviche de pescado fresco."
     },
     {
         id: 3,
-        name: "1/4 Pollo",
-        category: "a-la-brasa",
-        price: 18.00,
-        description: "Papas clásicas + ensalada + cremas",
-        image: "./images/menu/brasa-cuarto.jpg",
-        available: true
+        name: "Ceviche super mixto",
+        category: "ceviches",
+        price: 25.00,
+        description: "Ceviche con variedad de mariscos y pescado."
     },
-    // MOSTROS
+    {
+        id: 4,
+        name: "Ceviche clásico",
+        category: "ceviches",
+        price: 20.00,
+        description: "Ceviche clásico peruano."
+    },
+    {
+        id: 5,
+        name: "Ceviche de conchas negras",
+        category: "ceviches",
+        price: 25.00,
+        description: "Ceviche preparado con conchas negras."
+    }
+    ,
+    // LECHES
     {
         id: 10,
-        name: "Mostrazo 1/4 Pollo",
-        category: "mostros",
-        price: 20.00,
-        description: "+ papas + arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
-        image: "./images/menu/mostrazo.jpg",
-        available: true
+        name: "Leche de tigre",
+        category: "leches",
+        price: 12.00,
+        description: "Leche de tigre tradicional."
     },
     {
         id: 11,
-        name: "Mostrito 1/8 Pollo",
-        category: "mostros",
-        price: 13.00,
-        description: "+ papas + arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
-        image: "./images/menu/mostrazo.jpg",
-        available: true
+        name: "Leche de Pantera",
+        category: "leches",
+        price: 15.00,
+        description: "Leche de Pantera especial."
     },
     {
         id: 12,
-        name: "Chaufa con Pollo 1/4",
-        category: "mostros",
-        price: 16.00,
-        description: "+ arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
-        image: "./images/menu/mostrito.jpg",
-        available: true
-    },
-    {
-        id: 13,
-        name: "Chaufa con Pollo 1/8",
-        category: "mostros",
-        price: 13.00,
-        description: "+ arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
-        image: "./images/menu/mostrito.jpg",
-        available: true
-    },
-    // SALCHIPAPAS
+        name: "Leche calle 13",
+        category: "leches",
+        price: 20.00,
+        description: "Leche especial de la casa Calle 13."
+    }
+    ,
+    // ARROCES
     {
         id: 20,
-        name: "Salchipapa clásica",
-        category: "salchipapas",
-        price: 8.00,
-        description: "Salchipapa clásica",
-        image: "./images/menu/salchipapa.jpg",
-        available: true
+        name: "Arroz con marisco",
+        category: "arroces",
+        price: 16.00,
+        description: "Arroz con mariscos frescos."
     },
     {
         id: 21,
-        name: "Salchipapa a lo pobre",
-        category: "salchipapas",
-        price: 10.00,
-        description: "Salchipapa a lo pobre",
-        image: "./images/menu/salchipapa-pobre.jpg",
-        available: true
+        name: "Arroz norteño",
+        category: "arroces",
+        price: 16.00,
+        description: "Arroz norteño tradicional."
     },
     {
         id: 22,
-        name: "Salchichaufa a lo pobre",
-        category: "salchipapas",
-        price: 13.00,
-        description: "Salchichaufa a lo pobre",
-        image: "./images/menu/salchichaufa-pobre.jpg",
-        available: true
+        name: "Chaufa de marisco",
+        category: "arroces",
+        price: 16.00,
+        description: "Chaufa de mariscos variados."
     },
     {
         id: 23,
-        name: "Salchibrasa + 1/4 pollo",
-        category: "salchipapas",
-        price: 18.00,
-        description: "Salchibrasa con 1/4 pollo",
-        image: "./images/menu/salchibrasa.jpg",
-        available: true
+        name: "Chaufa de pescado",
+        category: "arroces",
+        price: 20.00,
+        description: "Chaufa preparado con pescado."
     },
     {
         id: 24,
-        name: "Salchibrasa + 1/8 pollo",
-        category: "salchipapas",
-        price: 13.00,
-        description: "Salchibrasa con 1/8 pollo",
-        image: "./images/menu/salchibrasa.jpg",
-        available: true
+        name: "Chaufa de langostino",
+        category: "arroces",
+        price: 20.00,
+        description: "Chaufa preparado con langostinos."
     },
-    // MEGA COMBOS
+    // PESCADO-FRITO
     {
         id: 30,
-        name: "Mega Combo 1",
-        category: "mega-combos",
-        price: 82.00,
-        description: "+ 1 Pollo + 1/2 pollo solo + papa amarilla familiar + ensalada + cremas + gaseosa 1.5Lt Inka Cola",
-        image: "./images/menu/mega-combo.jpg",
-        available: true
+        name: "Cabrilla frita",
+        category: "pescado-frito",
+        price: 20.00,
+        description: "Cabrilla frita crocante."
     },
     {
         id: 31,
-        name: "Mega Combo 2",
-        category: "mega-combos",
-        price: 74.00,
-        description: "+ 1 Pollo + 1 salchibrasa + papas amarilla + ensalada + cremas + gaseosa 1.5Lt Pepsi",
-        image: "./images/menu/mega-combo.jpg",
-        available: true
+        name: "Doncella frita",
+        category: "pescado-frito",
+        price: 20.00,
+        description: "Doncella frita al estilo de la casa."
     },
     {
         id: 32,
-        name: "Super Monstruo Familiar",
-        category: "mega-combos",
-        price: 75.00,
-        description: "+ 1 Pollo entero + 1/4 pollo gratis solo + chaufa + papas amarilla + ensalada + cremas + gaseosa 1.5Lt Inka Cola",
-        image: "./images/menu/super-monstruo-familiar.jpg",
-        available: true
+        name: "Pampanito frito",
+        category: "pescado-frito",
+        price: 20.00,
+        description: "Pampanito frito dorado."
     },
-    {
-        id: 33,
-        name: "Para 2 personas",
-        category: "mega-combos",
-        price: 38.00,
-        description: "+ 1/2 pollo + chaufa + papas amarilla + ensalada + 1/2 jarra chicha o maracuyá",
-        image: "./images/menu/para-2-personas.jpg",
-        available: true
-    },
-    // A LO ARLETH
+    // CHICHARRONES-JALEAS
     {
         id: 40,
-        name: "Brasa Arleth",
-        category: "a-lo-arleth",
-        price: 21.00,
-        description: "+ 1/4 pollo + arroz blanco + huevo y plátano + papas amarilla + ensalada + cremas + gaseosa personal 500ml Inka Cola",
-        image: "./images/menu/brasa-arleth.jpg",
-        available: true
+        name: "Chicharrón de pota",
+        category: "chicharrones-jaleas",
+        price: 12.00,
+        description: "Chicharrón de pota crocante."
     },
     {
         id: 41,
-        name: "Pollo Arleth",
-        category: "a-lo-arleth",
-        price: 22.00,
-        description: "+ 1/4 pollo + arroz chaufa + huevo y plátano + papas amarilla + ensalada + cremas + gaseosa personal 500ml Inka Cola",
-        image: "./images/menu/pollo-arleth.jpg",
-        available: true
+        name: "Chicharrón de pescado",
+        category: "chicharrones-jaleas",
+        price: 25.00,
+        description: "Chicharrón de pescado fresco."
     },
     {
         id: 42,
-        name: "Salchi Alitas Arleth",
-        category: "a-lo-arleth",
-        price: 15.00,
-        description: "+ papas amarillas + salchicha + 3 alitas + cremas + vaso de chicha",
-        image: "./images/menu/salchi-alitas-arleth.jpg",
-        available: true
+        name: "Chicharrón de calamar",
+        category: "chicharrones-jaleas",
+        price: 30.00,
+        description: "Chicharrón de calamar tierno."
     },
-    // CHAUFAS
+    {
+        id: 43,
+        name: "Chicharrón mixto",
+        category: "chicharrones-jaleas",
+        price: 25.00,
+        description: "Chicharrón mixto de mariscos."
+    },
+    {
+        id: 44,
+        name: "Jalea mixta",
+        category: "chicharrones-jaleas",
+        price: 25.00,
+        description: "Jalea mixta de mariscos."
+    },
+    {
+        id: 45,
+        name: "Jalea norteña",
+        category: "chicharrones-jaleas",
+        price: 30.00,
+        description: "Jalea norteña tradicional."
+    },
+    {
+        id: 46,
+        name: "Jalea Calle 13",
+        category: "chicharrones-jaleas",
+        price: 35.00,
+        description: "Jalea especial de la casa Calle 13."
+    },
+        // SOPAS
     {
         id: 50,
-        name: "Chaufa familiar con pollo",
-        category: "chaufas",
-        price: 18.00,
-        description: "Chaufa familiar con pollo",
-        image: "./images/menu/chaufa-familiar-pollo.jpg",
-        available: true
+        name: "Sudado de cabrilla",
+        category: "sopas",
+        price: 20.00,
+        description: "Sudado de cabrilla tradicional."
     },
     {
         id: 51,
-        name: "Chaufa de pollo",
-        category: "chaufas",
-        price: 11.00,
-        description: "Chaufa de pollo",
-        image: "./images/menu/chaufa-pollo.jpg",
-        available: true
+        name: "Sudado de trambollo",
+        category: "sopas",
+        price: 25.00,
+        description: "Sudado de trambollo fresco."
     },
     {
         id: 52,
-        name: "Chaufa de carne",
-        category: "chaufas",
-        price: 15.00,
-        description: "Chaufa de carne",
-        image: "./images/menu/chaufa-carne.jpg",
-        available: true
+        name: "Sudado calle 13",
+        category: "sopas",
+        price: 25.00,
+        description: "Sudado especial de la casa Calle 13."
     },
     {
         id: 53,
-        name: "Chaufa de chancho",
-        category: "chaufas",
-        price: 14.00,
-        description: "Chaufa de chancho",
-        image: "./images/menu/chaufa-chancho.jpg",
-        available: true
+        name: "Parihuela de cabrilla",
+        category: "sopas",
+        price: 25.00,
+        description: "Parihuela de cabrilla con mariscos."
     },
     {
         id: 54,
-        name: "Chaufa con lomo",
-        category: "chaufas",
-        price: 20.00,
-        description: "Chaufa con lomo",
-        image: "./images/menu/chaufa-lomo.jpg",
-        available: true
+        name: "Parihuela de trambollo",
+        category: "sopas",
+        price: 25.00,
+        description: "Parihuela de trambollo con mariscos."
     },
     {
         id: 55,
-        name: "Chaufa con tortilla",
-        category: "chaufas",
-        price: 17.00,
-        description: "Chaufa con tortilla",
-        image: "./images/menu/chaufa-tortilla.jpg",
-        available: true
+        name: "Chupe de pescado",
+        category: "sopas",
+        price: 20.00,
+        description: "Chupe de pescado tradicional."
     },
     {
         id: 56,
-        name: "Chaufa especial",
-        category: "chaufas",
-        price: 20.00,
-        description: "Chaufa especial",
-        image: "./images/menu/chaufa-especial.jpg",
-        available: true
+        name: "Chupe de langostino",
+        category: "sopas",
+        price: 25.00,
+        description: "Chupe de langostino fresco."
     },
     {
         id: 57,
-        name: "Chaufa con langostinos",
-        category: "chaufas",
+        name: "Chupe de cangrejo",
+        category: "sopas",
         price: 20.00,
-        description: "Chaufa con langostinos",
-        image: "./images/menu/chaufa-langostinos.jpg",
-        available: true
-    },
-    // AEROPUERTO
-    {
-        id: 60,
-        name: "Aeropuerto con Pollo",
-        category: "aeropuerto",
-        price: 13.00,
-        description: "Aeropuerto con Pollo",
-        image: "./images/menu/aeropuerto-pollo.jpg",
-        available: true
+        description: "Chupe de cangrejo tradicional."
     },
     {
-        id: 61,
-        name: "Aeropuerto con Carne",
-        category: "aeropuerto",
-        price: 16.00,
-        description: "Aeropuerto con Carne",
-        image: "./images/menu/aeropuerto-carne.jpg",
-        available: true
+        id: 58,
+        name: "Chupe calle 13",
+        category: "sopas",
+        price: 25.00,
+        description: "Chupe especial de la casa Calle 13."
     },
     {
-        id: 62,
-        name: "Aeropuerto con Chancho",
-        category: "aeropuerto",
-        price: 16.00,
-        description: "Aeropuerto con Chancho",
-        image: "./images/menu/aeropuerto-chancho.jpg",
-        available: true
+        id: 59,
+        name: "Chilcano",
+        category: "sopas",
+        price: 10.00,
+        description: "Chilcano tradicional peruano."
     },
-    {
-        id: 63,
-        name: "Aeropuerto con Langostino",
-        category: "aeropuerto",
-        price: 22.00,
-        description: "Aeropuerto con Langostino",
-        image: "./images/menu/aeropuerto-langostino.jpg",
-        available: true
-    },
-    {
-        id: 64,
-        name: "Aeropuerto Especial",
-        category: "aeropuerto",
-        price: 22.00,
-        description: "Aeropuerto Especial",
-        image: "./images/menu/aeropuerto-especial.jpg",
-        available: true
-    },
-    /*
-    // SALVAJE
+    // PLATOS-CRIOLLOS
     {
         id: 70,
-        name: "Salvaje de Pollo",
-        category: "salvaje",
-        price: 13.00,
-        description: "Salvaje de Pollo",
-        image: "./images/menu/salvaje-pollo.jpg",
-        available: true
+        name: "Chaufa de pollo",
+        category: "platos-criollos",
+        price: 12.00,
+        description: "Chaufa de pollo clásico."
     },
     {
         id: 71,
-        name: "Salvaje de Carne",
-        category: "salvaje",
-        price: 16.00,
-        description: "Salvaje de Carne",
-        image: "./images/menu/salvaje-carne.jpg",
-        available: true
+        name: "Saltado de pollo",
+        category: "platos-criollos",
+        price: 15.00,
+        description: "Saltado de pollo al estilo peruano."
     },
     {
         id: 72,
-        name: "Salvaje de Chancho",
-        category: "salvaje",
-        price: 16.00,
-        description: "Salvaje de Chancho",
-        image: "./images/menu/salvaje-chancho.jpg",
-        available: true
+        name: "Lomo saltado",
+        category: "platos-criollos",
+        price: 15.00,
+        description: "Lomo saltado tradicional peruano."
     },
-    {
-        id: 73,
-        name: "Salvaje de Langostino",
-        category: "salvaje",
-        price: 22.00,
-        description: "Salvaje de Langostino",
-        image: "./images/menu/salvaje-langostino.jpg",
-        available: true
-    },
-    {
-        id: 74,
-        name: "Salvaje especial",
-        category: "salvaje",
-        price: 22.00,
-        description: "Salvaje especial",
-        image: "./images/menu/salvaje-especial.jpg",
-        available: true
-    },
-    */
-    // COMBINADO
+     // DUOS
     {
         id: 80,
-        name: "Combinado de Pollo",
-        category: "combinado",
-        price: 15.00,
-        description: "Combinado de Pollo",
-        image: "./images/menu/combinado-pollo.jpg",
-        available: true
+        name: "Arroz c/Mariscos + ceviche",
+        category: "duos",
+        price: 20.00,
+        description: "Arroz con mariscos acompañado de ceviche."
     },
     {
         id: 81,
-        name: "Combinado de Chancho",
-        category: "combinado",
-        price: 18.00,
-        description: "Combinado de Chancho",
-        image: "./images/menu/combinado-chancho.jpg",
-        available: true
+        name: "Chaufa d/ Marisco + ceviche",
+        category: "duos",
+        price: 20.00,
+        description: "Chaufa de marisco acompañado de ceviche."
     },
     {
         id: 82,
-        name: "Combinado de Carne",
-        category: "combinado",
-        price: 18.00,
-        description: "Combinado de Carne",
-        image: "./images/menu/combinado-carne.jpg",
-        available: true
+        name: "Picante d/ Marisco + ceviche",
+        category: "duos",
+        price: 20.00,
+        description: "Picante de marisco acompañado de ceviche."
     },
     {
         id: 83,
-        name: "Combinado especial",
-        category: "combinado",
-        price: 23.00,
-        description: "Combinado especial",
-        image: "./images/menu/combinado-especial.jpg",
-        available: true
-    },
-    // TALLARIN CHIFA
-    {
-        id: 90,
-        name: "Tallarín con Pollo",
-        category: "tallarin-chifa",
-        price: 13.00,
-        description: "Tallarín con Pollo",
-        image: "./images/menu/tallarin-pollo.jpg",
-        available: true
-    },
-    {
-        id: 91,
-        name: "Tallarín especial",
-        category: "tallarin-chifa",
+        name: "Ceviche + Chicharrón de pescado",
+        category: "duos",
         price: 20.00,
-        description: "Tallarín especial",
-        image: "./images/menu/tallarin-especial.jpg",
-        available: true
+        description: "Ceviche acompañado de chicharrón de pescado."
     },
-    // LOMOS
+    {
+        id: 84,
+        name: "Ceviche + Chicharrón de calamar",
+        category: "duos",
+        price: 25.00,
+        description: "Ceviche acompañado de chicharrón de calamar."
+    },
+    {
+        id: 85,
+        name: "Ceviche + Chicharrón mixto",
+        category: "duos",
+        price: 25.00,
+        description: "Ceviche acompañado de chicharrón mixto."
+    },
+    {
+        id: 86,
+        name: "Leche d/ tigre + chicharrón de Pescado",
+        category: "duos",
+        price: 15.00,
+        description: "Leche de tigre con chicharrón de pescado."
+    },
+    {
+        id: 87,
+        name: "Leche d/ tigre + chicharrón mixto",
+        category: "duos",
+        price: 20.00,
+        description: "Leche de tigre con chicharrón mixto."
+    },
+    {
+        id: 88,
+        name: "Leche d/ tigre + chicharrón d/ calamar",
+        category: "duos",
+        price: 22.00,
+        description: "Leche de tigre con chicharrón de calamar."
+    },
+    {
+        id: 89,
+        name: "Causa + ceviche",
+        category: "duos",
+        price: 20.00,
+        description: "Causa limeña acompañada de ceviche."
+    },
+        // TRIOS
     {
         id: 100,
-        name: "Lomo saltado de carne",
-        category: "lomos",
-        price: 18.00,
-        description: "Lomo saltado de carne",
-        image: "./images/menu/lomo-carne.jpg",
-        available: true
+        name: "Arroz c/ marisco + ceviche + c/ de pota",
+        category: "trios",
+        price: 25.00,
+        description: "Arroz con marisco, ceviche y chicharrón de pota."
     },
     {
         id: 101,
-        name: "Lomo saltado de pollo",
-        category: "lomos",
-        price: 16.00,
-        description: "Lomo saltado de pollo",
-        image: "./images/menu/lomo-pollo.jpg",
-        available: true
+        name: "Chaufa d/ marisco + ceviche + c/ de pota",
+        category: "trios",
+        price: 26.00,
+        description: "Chaufa de marisco, ceviche y chicharrón de pota."
     },
     {
         id: 102,
-        name: "Lomo + chaufa de carne",
-        category: "lomos",
-        price: 20.00,
-        description: "Lomo + chaufa de carne",
-        image: "./images/menu/lomo-chaufa-carne.jpg",
-        available: true
+        name: "Arroz norteño + ceviche + c/ de pota",
+        category: "trios",
+        price: 28.00,
+        description: "Arroz norteño, ceviche y chicharrón de pota."
     },
     {
         id: 103,
-        name: "Tallarín saltado de carne",
-        category: "lomos",
-        price: 18.00,
-        description: "Tallarín saltado de carne",
-        image: "./images/menu/tallarin-saltado-carne.jpg",
-        available: true
+        name: "Causa + ceviche + arroz de mariscos",
+        category: "trios",
+        price: 25.00,
+        description: "Causa limeña, ceviche y arroz de mariscos."
     },
     {
         id: 104,
-        name: "Tallarín saltado de pollo",
-        category: "lomos",
-        price: 16.00,
-        description: "Tallarín saltado de pollo",
-        image: "./images/menu/tallarin-saltado-pollo.jpg",
-        available: true
+        name: "Chaufa de mariscos + causa + ceviche",
+        category: "trios",
+        price: 25.00,
+        description: "Chaufa de mariscos, causa y ceviche."
     },
     {
         id: 105,
-        name: "Lomo saltado a lo pobre",
-        category: "lomos",
-        price: 20.00,
-        description: "Lomo saltado a lo pobre",
-        image: "./images/menu/lomo-pobre.jpg",
-        available: true
+        name: "Leche d/ tigre + chicharron d/ calamar",
+        category: "trios",
+        price: 25.00,
+        description: "Leche de tigre y chicharrón de calamar."
     },
-    {
-        id: 106,
-        name: "Lomo saltado con chaufa a lo pobre",
-        category: "lomos",
-        price: 21.00,
-        description: "Lomo saltado con chaufa a lo pobre",
-        image: "./images/menu/lomo-chaufa-pobre.jpg",
-        available: true
-    },
-    /*
-    // SOPAS
+        // CUARTETO-MARINO
     {
         id: 110,
-        name: "Caldo solo",
-        category: "sopas",
-        price: 8.00,
-        description: "Caldo solo",
-        image: "./images/menu/caldo-solo.jpg",
-        available: true
+        name: "Arroz c/ marisco + ceviche + c/ de pota + causa",
+        category: "cuarteto-marino",
+        price: 35.00,
+        description: "Arroz con marisco, ceviche, chicharrón de pota y causa."
     },
     {
         id: 111,
-        name: "Caldo mediano",
-        category: "sopas",
-        price: 10.00,
-        description: "Caldo mediano",
-        image: "./images/menu/caldo-mediano.jpg",
-        available: true
+        name: "Chaufa d/ marisco + ceviche + c/ de pota + causa",
+        category: "cuarteto-marino",
+        price: 35.00,
+        description: "Chaufa de marisco, ceviche, chicharrón de pota y causa."
     },
     {
         id: 112,
-        name: "Caldo grande",
-        category: "sopas",
-        price: 12.00,
-        description: "Caldo grande",
-        image: "./images/menu/caldo-grande.jpg",
-        available: true
+        name: "Arroz norteño + ceviche + c/ de pota + causa",
+        category: "cuarteto-marino",
+        price: 35.00,
+        description: "Arroz norteño, ceviche, chicharrón de pota y causa."
     },
     {
         id: 113,
-        name: "Sopa wantán",
-        category: "sopas",
-        price: 10.00,
-        description: "Sopa wantán",
-        image: "./images/menu/sopa-wantan.jpg",
-        available: true
+        name: "Arroz c/ marisco + tiradito + c/ de pota + causa",
+        category: "cuarteto-marino",
+        price: 35.00,
+        description: "Arroz con marisco, tiradito, chicharrón de pota y causa."
     },
-    */
-    // GASEOSAS
+    {
+        id: 114,
+        name: "Chaufa d/ marisco + tiradito + c/ de pota + causa",
+        category: "cuarteto-marino",
+        price: 35.00,
+        description: "Chaufa de marisco, tiradito, chicharrón de pota y causa."
+    },
+    {
+        id: 115,
+        name: "Arroz norteño + tiradito + c/ de pota + causa",
+        category: "cuarteto-marino",
+        price: 35.00,
+        description: "Arroz norteño, tiradito, chicharrón de pota y causa."
+    },
+        // BEBIDAS
     {
         id: 120,
-        name: "Inka personal 300ml",
-        category: "gaseosas",
+        name: "Gordita",
+        category: "bebidas",
         price: 3.00,
-        description: "Inka personal 300ml",
-        image: "./images/menu/inka-300.jpg",
-        available: true
+        description: "Gaseosa Gordita."
     },
     {
         id: 121,
-        name: "Inka personal 600ml",
-        category: "gaseosas",
-        price: 4.00,
-        description: "Inka personal 600ml",
-        image: "./images/menu/inka-600.jpg",
-        available: true
+        name: "Inca Kola 1L.",
+        category: "bebidas",
+        price: 5.00,
+        description: "Inca Kola de 1 litro."
     },
     {
         id: 122,
-        name: "Inka cola 1Lt.",
-        category: "gaseosas",
-        price: 6.00,
-        description: "Inka cola 1Lt.",
-        image: "./images/menu/gaseosa-inca-1lt.jpg",
-        available: true
+        name: "Coca Cola 1L.",
+        category: "bebidas",
+        price: 5.00,
+        description: "Coca Cola de 1 litro."
     },
     {
         id: 123,
-        name: "Coca cola 1.5 Lt.",
-        category: "gaseosas",
-        price: 9.00,
-        description: "Coca cola 1.5 Lt.",
-        image: "./images/menu/coca-1-5lt.jpg",
-        available: true
+        name: "Chola Inca 1L.",
+        category: "bebidas",
+        price: 5.00,
+        description: "Chola Inca de 1 litro."
     },
     {
         id: 124,
-        name: "Inka Cola 3Lt.",
-        category: "gaseosas",
-        price: 13.00,
-        description: "Inka Cola 3Lt.",
-        image: "./images/menu/gaseosa-inca-3lt.jpg",
-        available: true
+        name: "Chicha Morada",
+        category: "bebidas",
+        price: 7.00,
+        description: "Chicha Morada tradicional."
     },
     {
         id: 125,
-        name: "Pepsi 1.5Lt.",
-        category: "gaseosas",
-        price: 5.00,
-        description: "Pepsi 1.5Lt.",
-        image: "./images/menu/pepsi-1-5lt.jpg",
-        available: true
-    },
-    // REFRESCOS
-    {
-        id: 130,
-        name: "Chicha Morada 1Lt.",
-        category: "refrescos",
-        price: 10.00,
-        description: "Chicha Morada 1Lt.",
-        image: "./images/menu/chicha-morada.jpg",
-        available: true
-    },
-    {
-        id: 131,
-        name: "Chicha Morada 1/2Lt.",
-        category: "refrescos",
-        price: 6.00,
-        description: "Chicha Morada 1/2Lt.",
-        image: "./images/menu/chicha-morada-media.jpg",
-        available: true
-    },
-    {
-        id: 132,
-        name: "Maracuyá 1Lt.",
-        category: "refrescos",
-        price: 10.00,
-        description: "Maracuyá 1Lt.",
-        image: "./images/menu/maracuya.jpg",
-        available: true
-    },
-    {
-        id: 133,
-        name: "Maracuyá 1/2Lt.",
-        category: "refrescos",
-        price: 6.00,
-        description: "Maracuyá 1/2Lt.",
-        image: "./images/menu/maracuya-media.jpg",
-        available: true
-    },
-    // CERVEZAS
-    {
-        id: 140,
-        name: "Corona",
-        category: "cervezas",
-        price: 10.00,
-        description: "Corona",
-        image: "./images/menu/corona.jpg",
-        available: true
-    },
-    {
-        id: 141,
-        name: "Cusqueña Trigo",
-        category: "cervezas",
-        price: 10.00,
-        description: "Cusqueña Trigo",
-        image: "./images/menu/cerveza-trigo.jpg",
-        available: true
-    },
-    {
-        id: 142,
-        name: "Cusqueña Dorada",
-        category: "cervezas",
-        price: 10.00,
-        description: "Cusqueña Dorada",
-        image: "./images/menu/cusquena-dorada.jpg",
-        available: true
-    },
-    {
-        id: 143,
-        name: "Cusqueña Negra",
-        category: "cervezas",
-        price: 10.00,
-        description: "Cusqueña Negra",
-        image: "./images/menu/cerveza-negra.jpg",
-        available: true
-    }
+        name: "Pilsen",
+        category: "bebidas",
+        price: 7.00,
+        description: "Cerveza Pilsen."
+    }    
 ];
 
 // Hacer el array accesible globalmente
