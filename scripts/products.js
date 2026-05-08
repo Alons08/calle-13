@@ -54,7 +54,7 @@ const products = [
         category: "leches",
         price: 12.00,
         description: "Leche de tigre tradicional.",
-        image: "./images/menu/leche-tigre.jpg",
+        image: "./images/menu/leche-de-tigre.jpg",
         available: true
     },
     {
@@ -63,7 +63,7 @@ const products = [
         category: "leches",
         price: 15.00,
         description: "Leche de Pantera especial.",
-        image: "./images/menu/leche-pantera.jpg",
+        image: "./images/menu/leche-de-pantera.jpg",
         available: true
     },
     {
