@@ -83,7 +83,7 @@ const products = [
         category: "arroces",
         price: 16.00,
         description: "Arroz con mariscos frescos.",
-        image: "./images/menu/arroz-marisco.jpg",
+        image: "./images/menu/arroz-con-mariscos.jpg",
         available: true
     },
     {
@@ -101,7 +101,7 @@ const products = [
         category: "arroces",
         price: 16.00,
         description: "Chaufa de mariscos variados.",
-        image: "./images/menu/chaufa-marisco.jpg",
+        image: "./images/menu/arroz-chaufa-mariscos.jpg",
         available: true
     },
     {
@@ -119,7 +119,7 @@ const products = [
         category: "arroces",
         price: 20.00,
         description: "Chaufa preparado con langostinos.",
-        image: "./images/menu/chaufa-langostino.jpg",
+        image: "./images/menu/chaufa-de-langostinos.jpg",
         available: true
     },
     // PESCADO-FRITO
@@ -257,7 +257,7 @@ const products = [
         category: "sopas",
         price: 25.00,
         description: "Parihuela de trambollo con mariscos.",
-        image: "./images/menu/parihuela-trambollo.jpg",
+        image: "./images/menu/parihuela-tramboyo.jpg",
         available: true
     },
     {
@@ -340,7 +340,7 @@ const products = [
         category: "duos",
         price: 20.00,
         description: "Arroz con mariscos acompañado de ceviche.",
-        image: "./images/menu/arroz-mariscos-ceviche.jpg",
+        image: "./images/menu/duo-arroz-mariscos-ceviche.jpg",
         available: true
     },
     {
@@ -349,7 +349,7 @@ const products = [
         category: "duos",
         price: 20.00,
         description: "Chaufa de marisco acompañado de ceviche.",
-        image: "./images/menu/chaufa-marisco-ceviche.jpg",
+        image: "./images/menu/duo-chaufa-marisco-ceviche.jpg",
         available: true
     },
     {
@@ -367,7 +367,7 @@ const products = [
         category: "duos",
         price: 20.00,
         description: "Ceviche acompañado de chicharrón de pescado.",
-        image: "./images/menu/ceviche-chicharron-pescado.jpg",
+        image: "./images/menu/duo-ceviche-chicharron-pescado.jpg",
         available: true
     },
     {
@@ -385,7 +385,7 @@ const products = [
         category: "duos",
         price: 25.00,
         description: "Ceviche acompañado de chicharrón mixto.",
-        image: "./images/menu/ceviche-chicharron-mixto.jpg",
+        image: "./images/menu/duo-ceviche-chicharron-mixto.jpg",
         available: true
     },
     {
@@ -541,7 +541,7 @@ const products = [
         category: "bebidas",
         price: 3.00,
         description: "Gaseosa Gordita.",
-        image: "./images/menu/gordita.jpg",
+        image: "./images/menu/gaseosa-gordita.jpg",
         available: true
     },
     {
@@ -550,7 +550,7 @@ const products = [
         category: "bebidas",
         price: 5.00,
         description: "Inca Kola de 1 litro.",
-        image: "./images/menu/inca-kola-1l.jpg",
+        image: "./images/menu/gaseosa-inca-1lt.jpg",
         available: true
     },
     {
@@ -559,7 +559,7 @@ const products = [
         category: "bebidas",
         price: 5.00,
         description: "Coca Cola de 1 litro.",
-        image: "./images/menu/coca-cola-1l.jpg",
+        image: "./images/menu/gaseosa-coca-1lt.jpg",
         available: true
     },
     {
@@ -586,7 +586,7 @@ const products = [
         category: "bebidas",
         price: 7.00,
         description: "Cerveza Pilsen.",
-        image: "./images/menu/pilsen.jpg",
+        image: "./images/menu/cerveza-pilsen-callao.jpg",
         available: true
     }    
 ];
