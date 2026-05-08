@@ -474,7 +474,7 @@ function getProductPrice(product) {
     return product.price;
 }
 
-function renderProducts(category = 'a-la-brasa') {
+function renderProducts(category = 'ceviches') {
     const menuItemsContainer = document.getElementById('menu-items');
     if (!menuItemsContainer) return;
 
@@ -581,7 +581,7 @@ function setupProductEvents() {
 }
 
 function initProducts() {
-    renderProducts('a-la-brasa');
+    renderProducts('ceviches');
     setupFilters();
     setupProductEvents();
 }
