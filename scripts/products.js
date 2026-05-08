@@ -562,6 +562,7 @@ const products = [
         image: "./images/menu/gaseosa-coca-1lt.jpg",
         available: true
     },
+    /*
     {
         id: 123,
         name: "Chola Inca 1L.",
@@ -570,7 +571,7 @@ const products = [
         description: "Chola Inca de 1 litro.",
         image: "./images/menu/chola-inca-1l.jpg",
         available: true
-    },
+    },*/
     {
         id: 124,
         name: "Chicha Morada",
