@@ -33,7 +33,7 @@ const products = [
         name: "Ceviche clásico",
         category: "ceviches",
         price: 20.00,
-        description: "Ceviche clásico peruano.",
+        description: "Ceviche clásico a base de pescado y conchas negras.",
         image: "./images/menu/ceviche-clasico.jpg",
         available: true
     },
@@ -62,7 +62,7 @@ const products = [
         name: "Leche de Pantera",
         category: "leches",
         price: 15.00,
-        description: "Leche de Pantera especial.",
+        description: "Leche de Pantera a base de pescado y conchas negras.",
         image: "./images/menu/leche-de-pantera.jpg",
         available: true
     },
@@ -91,7 +91,7 @@ const products = [
         name: "Arroz norteño",
         category: "arroces",
         price: 16.00,
-        description: "Arroz norteño tradicional.",
+        description: "Arroz norteño a base de salsa verde de la casa.",
         image: "./images/menu/arroz-norteno.jpg",
         available: true
     },
@@ -120,6 +120,15 @@ const products = [
         price: 20.00,
         description: "Chaufa preparado con langostinos.",
         image: "./images/menu/chaufa-de-langostinos.jpg",
+        available: true
+    },
+    {
+        id: 25,
+        name: "Arroz con conchas negras",
+        category: "arroces",
+        price: 25.00,
+        description: "Arroz con conchas negras frescas.",
+        image: "./images/menu/arroz-con-conchas-negras.jpg",
         available: true
     },
     // PESCADO-FRITO
@@ -201,7 +210,7 @@ const products = [
         name: "Jalea norteña",
         category: "chicharrones-jaleas",
         price: 30.00,
-        description: "Jalea norteña tradicional.",
+        description: "Jalea norteña a base de mariscos y pescado entero a su preferencia.",
         image: "./images/menu/jalea-nortena.jpg",
         available: true
     },
@@ -331,6 +340,15 @@ const products = [
         price: 15.00,
         description: "Lomo saltado tradicional peruano.",
         image: "./images/menu/lomo-saltado.jpg",
+        available: true
+    },
+    {
+        id: 73,
+        name: "Pollo a la plancha",
+        category: "platos-criollos",
+        price: 15.00,
+        description: "Pollo a la plancha tradicional peruano.",
+        image: "./images/menu/pollo-la-plancha.jpg",
         available: true
     },
      // DUOS
