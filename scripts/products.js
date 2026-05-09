@@ -184,7 +184,7 @@ const products = [
         category: "chicharrones-jaleas",
         price: 25.00,
         description: "Chicharrón mixto de mariscos.",
-        image: "./images/menu/chicharron-mixto.jpg",
+        image: "./images/menu/chicharron-mixtoo.jpg",
         available: true
     },
     {
@@ -193,7 +193,7 @@ const products = [
         category: "chicharrones-jaleas",
         price: 25.00,
         description: "Jalea mixta de mariscos.",
-        image: "./images/menu/jalea-mixta.jpg",
+        image: "./images/menu/jalea-mixtoo.jpg",
         available: true
     },
     {
