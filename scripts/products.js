@@ -639,11 +639,17 @@ function renderProducts(category = menuState.category, searchTerm = menuState.se
         return matchesCategory && matchesSearch;
     });
 
+    const noResultsMessage = normalizedSearchTerm
+        ? category === 'all'
+            ? 'No se encontraron productos con ese nombre'
+            : 'No se encontraron productos con ese nombre en esta categoría'
+        : 'No hay productos disponibles en esta categoría';
+
     if (filteredProducts.length === 0) {
         menuItemsContainer.innerHTML = `
             <div class="no-products">
                 <i class="fas fa-utensils"></i>
-                <p>No hay productos disponibles en esta categoría</p>
+                <p>${noResultsMessage}</p>
             </div>
         `;
         return;
