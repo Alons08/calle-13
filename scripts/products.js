@@ -621,13 +621,23 @@ function getProductPrice(product) {
     return product.price;
 }
 
-function renderProducts(category = 'ceviches') {
+const menuState = {
+    category: 'all',
+    searchTerm: ''
+};
+
+function renderProducts(category = menuState.category, searchTerm = menuState.searchTerm) {
     const menuItemsContainer = document.getElementById('menu-items');
     if (!menuItemsContainer) return;
 
     menuItemsContainer.innerHTML = '';
 
-    const filteredProducts = products.filter(product => product.category === category);
+    const normalizedSearchTerm = searchTerm.trim().toLowerCase();
+    const filteredProducts = products.filter(product => {
+        const matchesCategory = category === 'all' || product.category === category;
+        const matchesSearch = !normalizedSearchTerm || product.name.toLowerCase().includes(normalizedSearchTerm);
+        return matchesCategory && matchesSearch;
+    });
 
     if (filteredProducts.length === 0) {
         menuItemsContainer.innerHTML = `
@@ -671,15 +681,43 @@ function renderProducts(category = 'ceviches') {
     });
 }
 
+function updateActiveFilter(category) {
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.classList.toggle('active', button.dataset.category === category);
+    });
+}
+
+function setMenuFilter(category, options = {}) {
+    const searchInput = document.getElementById('menu-search-input');
+    menuState.category = category;
+
+    if (options.resetSearch && searchInput) {
+        searchInput.value = '';
+        menuState.searchTerm = '';
+    } else if (typeof options.searchTerm === 'string') {
+        menuState.searchTerm = options.searchTerm;
+    }
+
+    updateActiveFilter(category);
+    renderProducts(menuState.category, menuState.searchTerm);
+}
+
 function setupFilters() {
     const filterButtons = document.querySelectorAll('.filter-btn');
+    const searchInput = document.getElementById('menu-search-input');
+
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            renderProducts(this.dataset.category);
+            setMenuFilter(this.dataset.category, { resetSearch: true });
         });
     });
+
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            menuState.searchTerm = this.value;
+            renderProducts(menuState.category, menuState.searchTerm);
+        });
+    }
 }
 
 function setupProductEvents() {
@@ -728,7 +766,7 @@ function setupProductEvents() {
 }
 
 function initProducts() {
-    renderProducts('ceviches');
+    setMenuFilter('all', { resetSearch: true });
     setupFilters();
     setupProductEvents();
 }
